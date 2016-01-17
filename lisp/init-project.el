@@ -1,14 +1,7 @@
 (require-package 'projectile)
-(require-package 'web-beautify)
 (require-package 'cursor-chg)
 
 (projectile-global-mode)
-
-;; format automatically
-(eval-after-load 'js2-mode
-  '(add-hook 'js2-mode-hook
-             (lambda ()
-               (add-hook 'before-save-hook 'web-beautify-js-buffer t t))))
 
 (defun kill-other-buffers ()
   "Kill all other buffers."
