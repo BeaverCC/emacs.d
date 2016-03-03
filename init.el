@@ -113,6 +113,7 @@
 (require 'init-dash)
 (require 'init-ledger)
 (require 'init-project)
+(require 'init-go)
 (require 'init-term)
 ;; Extra packages which don't require any configuration
 
